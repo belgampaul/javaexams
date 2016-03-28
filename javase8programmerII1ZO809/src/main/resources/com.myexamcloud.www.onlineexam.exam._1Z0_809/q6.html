@@ -1,0 +1,406 @@
+<!DOCTYPE html >
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+
+  <title>MyExamCloud - Take Exam</title>
+  <link href="/onlineexam/images/favicon.ico" rel="SHORTCUT ICON" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta content="initial-scale=1.0, user-scalable=yes" name="viewport"/>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+  <meta content="" name="description"/>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [["\\$", "\\$"],["\\(","\\)"]]}
+      });
+    </script>
+
+
+
+
+
+  <script type="text/javascript" src="/onlineexam/ckeditor/MathJax-2.2/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+
+
+  <link rel="stylesheet" href="/onlineexam/boat/css/takeexam.css">
+  <script type="text/javascript" src="/onlineexam/boat/js/jquery.js"></script>
+
+
+
+  <script type="text/javascript" src="/onlineexam/boat/js/jquery.sortable.min.js"></script>
+  <script type="text/javascript" src="/onlineexam/boat/js/sweet-justice.min.js"></script>
+  <script type="text/javascript" src="/onlineexam/boat/js/jquery.sidr.min.js"></script>
+  <script type="text/javascript" src="/onlineexam/boat/js/takeexam.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      var timeLeft = 1000;
+
+      timeLeft = 2358;
+
+
+
+
+      seTimerVal(timeLeft); /*SetTime For Timer*/
+
+
+
+      /**If Finish Exam Begin**/
+
+      /**If Finish Exam Close**/
+    });
+
+
+    function loadValues() {
+      var form = document.forms[0];
+
+    }
+
+  </script>
+  <link href="/onlineexam/boat/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <script>
+    $(window).load(function(){handle=$(".slider A.sui-slider-handle"),handle.removeClass("sui-corner-all"),handle.removeClass("sui-slider-handle"),handle.addClass("handle_")});
+    $(function(){var e=80,s=10,n=200;"undefined"==typeof $.session.get("fontSize")?$.session.set("fontSize",e):(e=$.session.get("fontSize"),$("#exam-content").addClass("size"+Math.round(e/10))),
+        $("#fSlider1").slider({value:e,min:s,max:n,range:"min",slide:function(e,s){$.session.set("fontSize",s.value),$("#exam-content").removeClass().addClass("size"+Math.round(s.value/10))}}),$("#fSliderVal1").keypress(function(e){return 8!=e.which&&0!=e.which&&(e.which<48||e.which>57)?!1:void 0}),$("#fSliderVal1").change(function(){var e=$(this).val();e=e.replace("",""),e=parseInt(e),s>e&&(e=s),e>n&&(e=n),$("#fSlider1").slider("value",parseInt(e)),$(this).val(e+"")})});
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/onlineexam/boat/js/html5shiv.js"></script>
+  <script src="/onlineexam/boat/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+
+<!--If Not Finish Exam Begin-->
+
+
+<body id="practice" onLoad="loadValues()">
+
+
+
+
+<!--Form Begin-->
+<form method="post" action="/onlineexam/exam/moveQuestion.html" id="SignupForm"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="bf4523d3f6d395ca43d8096086653708" /></div>
+  <input type="hidden" name="actionButtonH" id="actionButtonH" value="">
+
+
+
+  <input type="hidden" name="timer" id="timer" value="2358">
+  <!--For Popup-->
+  <div id="overlay"></div>
+  <div id="iOverlay"></div>
+
+  <!--Header Open-->
+  <div id="header">
+    <div class="eb-head-theme">
+      <div class="headicon">
+        <div class="logo"><img src="/onlineexam/images/logo.png"></div>
+      </div>
+      <div class="usericon">
+        <div class="pics">
+
+
+          <img src="https://lh6.googleusercontent.com/-h49HC4y_FQE/AAAAAAAAAAI/AAAAAAAADuQ/y9rX5BCobCg/photo.jpg"  id="https://lh6.googleusercontent.com/-h49HC4y_FQE/AAAAAAAAAAI/AAAAAAAADuQ/y9rX5BCobCg/photo.jpg" title="serge leinweber" />
+
+        </div>
+        serge leinweber
+
+      </div>
+
+      <div id="font-size">
+        <span class="toggle changeFontSize"></span>
+        <div id="ctrlOverlay">
+          <div class="alertPosition">
+            <div id="fontSizeCtrl" class="alertBox">
+              <h2>Adjust Font Size</h2>
+              <div class="default-slider">
+                <table class="topic-slider">
+                  <tr class="topic-slider-item">
+                    <td><span class="toggle smallFontSize"></span></td>
+                    <td width="100%">
+                      <div class="slider" id="fSlider1"></div>
+                    </td>
+                    <td><span class="toggle bigFontSize"></span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="eb-title-theme">
+      <div class="exam-label">
+
+
+
+
+
+
+
+        <div title="" class="field-icon practice-field"></div>
+        <div class="field-name">Practice Exam</div>
+
+
+
+
+
+
+
+      </div>
+      <div id="pallet">
+        <div class="pallet-container">
+          <div class="pallet-trigger">
+            <div class="icon"><span id="palletMenu"></span></div>
+          </div>
+        </div>
+      </div>
+      <div id="873793" class="instruct"><!--Exam ID-->
+        <div class="instruct-container">
+          <div class="instruct-trigger">
+            <div class="icon">i</div>
+          </div>
+        </div>
+      </div>
+      <div class="finishExam">
+        <input id="SaveAccount" name="actionButton" class="button blue" value="Finish Exam" onmousedown="" type="submit">
+      </div>
+      <div class="timer">
+        <input type="text" name="timerbox" readonly="true" class="timerbox">
+        <div class="timerStatus">
+          <span>Remaining</span>
+          <!--Remaining time for this question or this exam-->
+          <span class="exam-time-for">for this Exam</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Header Close-->
+
+  <!--Exam Question Session Begin-->
+  <div class="session spaceMaker">
+    <div id="exam-content">
+      <div class="topic">
+        <div class="row col15">
+          <!--Exam Name-->
+          <h1 class="quesTitle">Free 1Z0-809 Java SE 8 Programmer II Practice Mock Exam</h1>
+          <!--Topic Name-->
+          <h2 class="quesTopic"><i>Topic : </i>Java Concurrency</h2>
+        </div>
+      </div>
+
+
+      <!--Exam Question Begin-->
+      <div class="ques">
+        <div class="row col">
+          <!--Question Current Position-->
+          <h3 class="bees">Question 6 of 29:</h3>
+          <div class="userContent">
+            <!--Question Content Begin-->
+            <table>
+              <tbody>
+              <tr>
+                <td>
+                  <p>Which of the followings is true?</p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <!--Question Content Close-->
+          </div>
+        </div>
+      </div>
+
+
+      <!--Exam Question Close-->
+
+
+
+
+
+
+
+      <!--Single Choice (Answer type) Begin-->
+
+      <!--<< IF Take Exam Page Open >>-->
+      <div class="singleMulti choices">
+        <div class="row col">
+          <h3 class="bees">Select any one of given answer :</h3>
+
+
+
+          <input type="hidden" name="quesIndex" value="5" />
+
+          <div class="quesChoice ">
+            <div class="stateChoice bounceInDown animated"></div>
+            <table>
+              <tbody>
+              <tr>
+                <td class="selectChoice"><input type="radio" name="answer"  value="0"/><i>Choice</i> A</td>
+                <td>
+                  <div class="userContent">The ForkJoinTask class can&#39;t return a result.</div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="quesChoice ">
+            <div class="stateChoice bounceInDown animated"></div>
+            <table>
+              <tbody>
+              <tr>
+                <td class="selectChoice"><input type="radio" name="answer"  value="1"/><i>Choice</i> B</td>
+                <td>
+                  <div class="userContent">The ForkJoinTask is a sub class of RecursiveTask class.</div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="quesChoice ">
+            <div class="stateChoice bounceInDown animated"></div>
+            <table>
+              <tbody>
+              <tr>
+                <td class="selectChoice"><input type="radio" name="answer"  value="2"/><i>Choice</i> C</td>
+                <td>
+                  <div class="userContent">The ForkJoinTask class has only the &quot;fork()&quot; and &quot;join()&quot; methods.</div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="quesChoice ">
+            <div class="stateChoice bounceInDown animated"></div>
+            <table>
+              <tbody>
+              <tr>
+                <td class="selectChoice"><input type="radio" name="answer"  value="3"/><i>Choice</i> D</td>
+                <td>
+                  <div class="userContent">None of above.</div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="singleMulti col">
+        <div class="col">
+          <!--Ques Submit Answer Navigation-->
+          <p class="navQuestion">
+
+            <input type="submit" name="actionButton" id="actionButton" value="<< Previous Question" class="button blue row submitAns">
+            <input type="submit" name="actionButton" id="actionButton" value="Next Question >>" class="button blue row submitAns">
+          </p>
+        </div>
+      </div>
+      <!--<< IF Take Exam Page Close >>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--Question Pallet Begin-->
+    <div id="sidr" class="spaceMaker">
+      <div class="palletClose" onclick="disablePallet();">
+        <span class="palletCloseButton"></span>
+      </div>
+      <div class="palletInfo"><b>Question Pallet</b>
+      </div>
+      <div id="NumberContainer">
+        <div id="Pallet-Container">
+          <div class="buttonRow">
+            <div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="1" class="btn num noAnswer"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="2" class="btn num noAnswer"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="3" class="btn num noAnswer"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="4" class="btn num noAnswer"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="5" class="btn num noAnswer"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="6" class="btn num currentQues"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="7" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="8" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="9" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="10" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="11" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="12" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="13" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="14" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="15" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="16" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="17" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="18" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="19" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="20" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="21" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="22" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="23" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="24" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="25" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="26" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="27" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="28" class="btn num normal"></div><div class="buttonBlock" ><input type="submit" name="actionButton" id="actionButton" value="29" class="btn num normal"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="markQues">
+        <input type="checkbox"  name="markForReview" value="yes" class="markForReview">
+      </div>
+
+      <div class="palletInstructtion">
+        <div class="buttonRows">
+          <div class="buttonBlock">
+            <a class="btn num normal">23</a>
+            <span>Not Visited</span>
+          </div>
+          <div class="buttonBlock">
+            <a class="btn num noAnswer">29</a>
+            <span>Not Answered</span>
+          </div>
+        </div>
+        <div class="buttonRows">
+          <div class="buttonBlock">
+            <a class="btn num answer">0</a>
+            <span>Answered</span>
+          </div>
+          <div class="buttonBlock">
+            <a class="btn num marked">0</a>
+            <span>Marked</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Question Pallet Close-->
+
+  </div>
+  <!--Exam Question Session Close-->
+
+  <!-- Footer  -->
+  <div id="footer">
+    <div class="eb-footer-theme">
+      <div class="row">
+        <div class="cpy"><b>&copy;</b> Copyright 2016 EPractize Labs Software</div>
+        <div class="logo"></div>
+        <div class="cpy">Reach Exam Destiny</div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Close -->
+
+</form>
+<!--Form Close-->
+
+<!--This Script only for descriptive Question Open-->
+
+
+<!--This Script only for descriptive Question Close-->
+</body>
+<!--If Not Finish Exam Close-->
+
+
+
+
+<script type="text/javascript" src="/onlineexam/boat/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/onlineexam/boat/js/examboat-slider.js"></script>
+</html>
