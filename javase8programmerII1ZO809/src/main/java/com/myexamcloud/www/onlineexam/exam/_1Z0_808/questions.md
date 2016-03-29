@@ -2,7 +2,7 @@ Topic : Working with Inheritance
 ================================
 **Question 1 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Given</strong>
+Given
 
  1.   interface A{
  2. 
@@ -15,7 +15,9 @@ Topic : Working with Inheritance
  9.       static void print(){
  10.         System.out.println("A");
  11.     }
- 12.}</font>
+ 12.} 
+Which is true about above code? 
+
 ```
 
 Select any one of given answer :
@@ -28,6 +30,7 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 2 of 30:**
 ```
+Which of the following will print current date and time? 
 
 ```
 
@@ -42,7 +45,7 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 3 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   import java.time.LocalDate;
  2.   import java.time.Period;
@@ -53,7 +56,9 @@ Topic : Working with Selected classes from the Java API
  7.           Period p = Period.ofDays(2);
  8.           System.out.println(date.plus(p));
  9.       }
- 10.} </font>
+ 10.} 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -67,7 +72,7 @@ Topic : Using Loop Constructs
 =============================
 **Question 4 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   import java.util.ArrayList;
  2.   import java.util.List;
@@ -84,7 +89,9 @@ Topic : Using Loop Constructs
  13.             break;
  14.         }
  15.     }
- 16.} </font>
+ 16.} 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -98,7 +105,7 @@ Topic : Working with Inheritance
 ================================
 **Question 5 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Given</strong>
+Given
 
  1.   interface A{
  2. 
@@ -111,7 +118,9 @@ Topic : Working with Inheritance
  9.       static void print(){
  10.         System.out.println("A");
  11.     }
- 12.}</font>
+ 12.} 
+Which is true about above code? 
+
 ```
 
 Select any one of given answer :
@@ -124,7 +133,7 @@ Topic : Creating and Using Arrays
 =================================
 **Question 6 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1. public class MyExamCloudOCAJP8 {
  2. 
@@ -132,7 +141,9 @@ Topic : Creating and Using Arrays
  4.         Integer array[] = new Integer[0]; 
  5.         System.out.println(array[0]); 
  6.     }
- 7. } </font>
+ 7. } 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -146,9 +157,11 @@ Topic : Working with Methods and Encapsulation
 ==============================================
 **Question 7 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> public void print(){
+public void print(){
      System.out.println("default");
- } </font>
+ } 
+Which of the following correctly overload above method? 
+
 ```
 
 Select any one of given answer :
@@ -162,7 +175,12 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 8 of 30:**
 ```
-
+Consider following three statements 
+ 
+ I.   Function interface should contain only one method. 
+ II.  Function interface should contain only one method and it should be an abstract method. 
+ III. Functional interface can have more than one method. 
+ Which is/are true?
 ```
 
 Select any one of given answer :
@@ -176,7 +194,7 @@ Topic : Working With Java Data Types
 ====================================
 **Question 9 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1. public class MyExamCloudOCAJP8{
  2.     public static void main(String[] args){
@@ -184,7 +202,9 @@ Topic : Working With Java Data Types
  4.         int y = ++x * 4 / x-- + --x;
  5.         System.out.println("y + x is " + (y + x));
  6.     }
- 7. } </font>
+ 7. } 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -198,7 +218,7 @@ Topic : Working With Java Data Types
 ====================================
 **Question 10 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1. public class MyExamCloudOCAJP8 {
  2. 
@@ -208,7 +228,9 @@ Topic : Working With Java Data Types
  6.         int y;
  7.         System.out.println(y+MyExamCloudOCAJP8.y);
  8.     }
- 9. } </font>
+ 9. } 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -222,7 +244,7 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 11 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   public class MyExamCloudOCAJP8{
  2. 
@@ -233,7 +255,9 @@ Topic : Working with Selected classes from the Java API
  7.           str.concat(sb.toString());
  8.           System.out.println(str);
  9.       }
- 10.} </font>
+ 10.} 
+Which is the output? 
+
 ```
 
 Select any one of given answer :
@@ -247,6 +271,7 @@ Topic : Working With Java Data Types
 ====================================
 **Question 12 of 30:**
 ```
+Which of the following is valid identifier? 
 
 ```
 
@@ -261,7 +286,7 @@ Topic : Working with Inheritance
 ================================
 **Question 13 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Given</strong>
+Given
 
  1. public class MyExamCloudOCAJP8{
  2.     public static void main(String[] args){
@@ -270,7 +295,9 @@ Topic : Working with Inheritance
  5.         System.out.println(str);
  6. 
  7.     }
- 8. } </font>
+ 8. } 
+Which is true about above code? 
+
 ```
 
 Select any one of given answer :
@@ -284,7 +311,7 @@ Topic : Working with Methods and Encapsulation
 ==============================================
 **Question 14 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   public class A {
  2. 
@@ -302,7 +329,9 @@ Topic : Working with Methods and Encapsulation
  14. 
  15. public class B extends A{
  16.     //constructor for this class
- 17. } </font>
+ 17. } 
+Which of the following can be used as the constructor for the class B? 
+
 ```
 
 Select any one of given answer :
@@ -316,7 +345,7 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 15 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   import java.time.LocalDate;
  2. 
@@ -327,7 +356,9 @@ Topic : Working with Selected classes from the Java API
  7.           date.plusHours(12);
  8.           System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());
  9.       }
- 10. } </font>
+ 10. } 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -341,7 +372,7 @@ Topic : Working With Java Data Types
 ====================================
 **Question 16 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1. public class MyExamCloudOCAJP8 {
  2.     public static void main(String[] args) {
@@ -351,7 +382,9 @@ Topic : Working With Java Data Types
  6.         one = two;
  7.         one = null;
  8.     }
- 9. } </font>
+ 9. } 
+At line 8, which of the following/s eligible for garbage collection? 
+
 ```
 
 Select any one of given answer :
@@ -365,11 +398,12 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 17 of 30:**
 ```
-<strong>Consider following interface</strong>
+Consider following interface
  
  interface Runnable{
      public void run();
- }
+ } 
+ Which of the following will create instance of Runnable type?
 ```
 
 Select any one of given answer :
@@ -383,6 +417,7 @@ Topic : Java Basics
 ===================
 **Question 18 of 30:**
 ```
+Which of the following is true about java source code files? 
 
 ```
 
@@ -397,7 +432,7 @@ Topic : Using Operators and Decision Constructs
 ===============================================
 **Question 19 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   public class MyExamCloudOCAJP8{
  2.       public static void main(String[] args){
@@ -411,7 +446,9 @@ Topic : Using Operators and Decision Constructs
  10.             default : System.out.print("Y/N");
  11.         }
  12.     }
- 13.} </font>
+ 13.} 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -425,6 +462,12 @@ Topic : Java Basics
 ===================
 **Question 20 of 30:**
 ```
+Which of the followings can be considered as enhancements in java 8?
+
+I.   Support for the Lambda Expression.
+II.  Multiple inheritances.
+III. Default methods in abstract classes.
+IV.  Date and Time API 
 
 ```
 
@@ -439,11 +482,13 @@ Topic : Handling Exceptions
 ===========================
 **Question 21 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  public static void main(String[] args){
      Float number = Float.valueOf(args[0]);
- } </font>
+ } 
+Which of the following exceptions possible with above statement? 
+[ Choose two ]
 ```
 
 Select all correct answers :
@@ -457,11 +502,13 @@ Topic : Working with Inheritance
 ================================
 **Question 22 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  public interface A{
      void print();
- } </font>
+ } 
+Which of the following correctly override interface method A? 
+
 ```
 
 Select any one of given answer :
@@ -475,6 +522,7 @@ Topic : Java Basics
 ===================
 **Question 23 of 30:**
 ```
+Which of the following can be use to run java code after compiling source code with file name, "MyFirst.java"? 
 
 ```
 
@@ -489,7 +537,7 @@ Topic : Java Basics
 ===================
 **Question 24 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1.   public class MyExamCloudOCAJP8 {
  2. 
@@ -501,7 +549,9 @@ Topic : Java Basics
  8.               System.out.print(a);
  9.           }
  10.     }
- 11.} </font>
+ 11.} 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -515,7 +565,7 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 25 of 30:**
 ```
-<strong>Given</strong>
+Given
  
  1.   public interface A<R> extends B{
  2.       static void method(){
@@ -536,7 +586,8 @@ Topic : Working with Selected classes from the Java API
  17.  public interface D<T> extends A,B,C{
  18.     default void printer(T t){
  19.     }
- 20.    }
+ 20.    }   
+ Which of the interfaces can be considered as functional interface/s?
 ```
 
 Select any one of given answer :
@@ -550,7 +601,7 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 26 of 30:**
 ```
-<strong>Code:</strong>
+Code:
  
  1.   import java.util.ArrayList;
  2.   import java.util.List;
@@ -564,7 +615,8 @@ Topic : Working with Selected classes from the Java API
  10.         list.removeIf(e -> e%2 != 0);
  11.         System.out.println(list);
  12.     }
- 13.}
+ 13.} 
+ Which is the output?
 ```
 
 Select any one of given answer :
@@ -578,7 +630,7 @@ Topic : Working with Methods and Encapsulation
 ==============================================
 **Question 27 of 30:**
 ```
-<font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <strong>Code:</strong> 
+Code: 
 
  1. package epractizelabs;
  2. 
@@ -597,7 +649,9 @@ Topic : Working with Methods and Encapsulation
  13.         A a = new A();
  14.         System.out.println(a.y + y);
  15.     }
- 16. } </font>
+ 16. } 
+What is the output? 
+
 ```
 
 Select any one of given answer :
@@ -611,6 +665,9 @@ Topic : Working With Java Data Types
 ====================================
 **Question 28 of 30:**
 ```
+Which of the following will convert following string to a primitive float? 
+
+               String str = "1.2"; 
 
 ```
 
@@ -625,7 +682,8 @@ Topic : Working with Selected classes from the Java API
 =======================================================
 **Question 29 of 30:**
 ```
-
+"You have a list orders of PurchaseOrder objects, each with a date, a Customer and a state. You want filter list in various ways" 
+ Which of the following in built functional interface you are going to use for above?
 ```
 
 Select any one of given answer :
@@ -638,6 +696,7 @@ Topic : Working with Inheritance
 ================================
 **Question 30 of 30:**
 ```
+Which of the following method can include in an interface? 
 
 ```
 
