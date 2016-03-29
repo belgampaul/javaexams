@@ -385,7 +385,7 @@ Given
  
  Consider following table structure for the person table.
  
- <img alt="" src="/onlineexam/common/getAttachmentData.html?attachmentId=8249" style="height:158px; width:479px">
+ 
  What is the output?
 ```
 
