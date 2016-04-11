@@ -16,8 +16,8 @@ import java.util.Arrays;
  */
 public class ExamQuestionProcessorImpl extends ExamQuestionProcessor {
   private static final ObjectMapper objectMapper = new ObjectMapper();
-//  private static final String PATHNAME = "com.wiley.sybextestbank/questions.json";
-  private static final String PATHNAME = "com.wiley.sybextestbank/questionsReview.json";
+  private static final String PATHNAME = "com.wiley.sybextestbank/questions.json";
+//  private static final String PATHNAME = "com.wiley.sybextestbank/questionsReview.json";
 
   public ExamQuestionProcessorImpl(Path destDirPath, Path pathToJson) {
     super(destDirPath, pathToJson);
